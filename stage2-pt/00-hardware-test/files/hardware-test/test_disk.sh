@@ -15,10 +15,10 @@ echo "Detect Disk Device..."
 
 name=`lsblk | grep disk | grep sd[a-z] | awk '{print $1}'`
 size=`lsblk | grep disk | grep sd[a-z] | awk '{print $4}'`
-vendor=$(hwinfo --short | grep -w $name | awk '{print $2}')
+#vendor=$(hwinfo --short | grep -w $name | awk '{print $2}')
 
 echo ""
-echo "Find Device! size:$size    vendor:$vendor"
+echo "Find Device! size:$size"
 
 part=`lsblk | grep sd[a-z][1-9] | awk '{print $1}'`
 part=${part:2}
