@@ -18,8 +18,11 @@ EOL
 
 # Copy lora test tool
 cp -r files/rak2287 "${ROOTFS_DIR}/home/$FIRST_USER_NAME/"
-cp -r files/rak2287 "${ROOTFS_DIR}/home/$FIRST_USER_NAME/"
+cp -r files/rak5146 "${ROOTFS_DIR}/home/$FIRST_USER_NAME/"
 
 # Copy default wifi config
 cp files/Hotspot.nmconnection "/${ROOTFS_DIR}/etc/NetworkManager/system-connections/"
+cp files/ethernet-eth0.nmconnection "/${ROOTFS_DIR}/etc/NetworkManager/system-connections/"
+chmod 600 "/${ROOTFS_DIR}/etc/NetworkManager/system-connections/Hotspot.nmconnection"
+chmod 600 "/${ROOTFS_DIR}/etc/NetworkManager/system-connections/ethernet-eth0.nmconnection"
 
