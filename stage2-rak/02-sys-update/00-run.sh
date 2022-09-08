@@ -26,3 +26,8 @@ cp files/ethernet-eth0.nmconnection "/${ROOTFS_DIR}/etc/NetworkManager/system-co
 chmod 600 "/${ROOTFS_DIR}/etc/NetworkManager/system-connections/Hotspot.nmconnection"
 chmod 600 "/${ROOTFS_DIR}/etc/NetworkManager/system-connections/ethernet-eth0.nmconnection"
 
+#Update config.txt
+cp files/config.txt "${ROOTFS_DIR}/boot/"
+
+
+

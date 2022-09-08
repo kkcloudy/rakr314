@@ -2,7 +2,7 @@
 id=Hotspot
 uuid=89e4ba16-f8aa-4d6f-a4ee-29014cd2e991
 type=wifi
-autoconnect=false
+autoconnect=yes
 interface-name=wlan0
 permissions=
 timestamp=1662603188
