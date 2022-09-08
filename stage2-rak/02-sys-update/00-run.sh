@@ -29,5 +29,7 @@ chmod 600 "/${ROOTFS_DIR}/etc/NetworkManager/system-connections/ethernet-eth0.nm
 #Update config.txt
 cp files/config.txt "${ROOTFS_DIR}/boot/"
 
+# Update MOTD
+cp files/update-motd.d/* "${ROOTFS_DIR}/etc/update-motd.d/"
 
 
