@@ -1,6 +1,6 @@
 network-manager
 python3-pip
-rng-tools=5
+rng-tools
 apt-transport-https
 ca-certificates
 curl
