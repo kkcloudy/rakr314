@@ -12,7 +12,7 @@ band=bg
 channel=11
 mac-address-blacklist=
 mode=ap
-ssid=Rakwireless_FCC
+ssid=Rakwireless_314
 
 [wifi-security]
 group=ccmp;
